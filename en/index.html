@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://challenges.cloudflare.com https://consent.cookiebot.com https://consentcdn.cookiebot.com https://www.googletagmanager.com https://*.google-analytics.com https://connect.facebook.net https://static.zdassets.com https://ekr.zdassets.com https://*.clarity.ms https://maps.googleapis.com https://platform.twitter.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; img-src 'self' data: https: blob:; font-src 'self' https://cdnjs.cloudflare.com; connect-src 'self' https://cdnjs.cloudflare.com https://challenges.cloudflare.com https://consent.cookiebot.com https://consentcdn.cookiebot.com https://*.google-analytics.com https://analytics.google.com https://*.clarity.ms https://*.zendesk.com https://ekr.zdassets.com https://maps.googleapis.com; frame-src https://challenges.cloudflare.com https://www.myteamspeak.com https://forms.teamspeak.com https://www.youtube.com https://www.youtube-nocookie.com https://www.google.com https://consentcdn.cookiebot.com https://platform.twitter.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' https://www.myteamspeak.com;">
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="cd38cf04-13af-47d5-b66b-edaf14763b20" data-blockingmode="auto" data-consentmode="auto" type="text/javascript" data-culture="EN" data-georegions="{'region':'AT,BE,BG,HR,CY,CZ,DK,EE,FI,FR,DE,GR,HU,IE,IT,LV,LT,LU,MT,NL,PL,PT,RO,SK,SI,ES,SE,GB,IS,LI,NO,CH,SG,TH,KR,JP,CA,TR,IL,AR,AE,SA,UY,NZ,IN,AU,CN,ID,NG','cbid':'e16a2954-ecaa-465d-a65d-fab3be3066ef'},{'region':'US','cbid':'d46b916e-2a0f-4275-b593-79e813894f91'},{'region':'BR','cbid':'e92a2517-0d92-4d12-8b99-92df7ba3b2e4'},{'region':'ZA','cbid':'633410ab-086b-4c6f-8a52-00b61fc9f248'},{'region':'HK,TW,PH,MY,VN,MX,CL,CO,EG,RU,UA,BD,PK,LK,NP,KH,MM,LA,MN,QA,KW,BH,OM,JO,LB,IQ,KZ,UZ,KE,GH,TZ,ET,MA,TN,DZ,PE,EC,VE,DO,GT,CR,PA,UY,PY,BO,RS,BA,MK,AL,MD,GE,AM,AZ,BY','cbid':'93fe7f0b-ab95-40a8-a2b2-9d24e2ac331d'}"></script>
+<script>
+function cbCleanAndReload(){
+  if(typeof Cookiebot==='undefined'||!Cookiebot.changed)return;
+  var top=location.hostname.split('.').slice(-2).join('.');
+  var domains=['','.'+location.hostname,'.'+top];
+  var paths=['/',''];
+  function del(name){
+    domains.forEach(function(d){paths.forEach(function(p){
+      document.cookie=name+'=;expires=Thu,01 Jan 1970 00:00:00 GMT;path='+p+(d?';domain='+d:'');
+    })});
+  }
+  if(!Cookiebot.consent.statistics){
+    del('_ga');del('_gid');del('_gat');del('_clck');del('_clsk');del('CLID');del('ANONCHK');del('MR');del('MUID');del('SM');
+    document.cookie.split(';').forEach(function(c){
+      var n=c.trim().split('=')[0];
+      if(n.indexOf('_ga_')===0||n.indexOf('_gat_')===0)del(n);
+    });
+  }
+  if(!Cookiebot.consent.marketing){
+    del('_fbp');del('_fbc');
+  }
+  location.reload();
+}
+window.addEventListener('CookiebotOnAccept',cbCleanAndReload);
+window.addEventListener('CookiebotOnDecline',cbCleanAndReload);
+window.addEventListener('CookiebotOnDialogDisplay',function(){
+  if(window.innerWidth>768)return;
+  setTimeout(function(){
+    var body=document.getElementById('CybotCookiebotDialogBody');
+    if(body)body.scrollTop=body.scrollHeight;
+  },100);
+});
+</script>
+<script data-cookieconsent="ignore">
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+gtag('consent','default',{
+  'ad_storage':'denied',
+  'ad_user_data':'denied',
+  'ad_personalization':'denied',
+  'analytics_storage':'denied',
+  'functionality_storage':'denied',
+  'personalization_storage':'denied',
+  'security_storage':'granted',
+  'wait_for_update':500
+});
+</script>
+<title>TeamSpeak</title>
+		<meta charset="utf-8" />
+		<meta name="msapplication-TileColor" content="#13182D">
+        <meta name="msapplication-TileImage" content="/user/themes/teamspeak/images/favicon.png">
+        <meta name="theme-color" content="#13182D">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="TeamSpeak" />
+        <meta property="og:description" content="TeamSpeak – Crystal-clear voice communication for gaming, teams, and communities. Secure, private, and fully customizable." />
+        <meta property="og:url" content="/en" />
+        <meta property="og:image" content="/user/themes/teamspeak/images/ts-share-image2.jpg"/>
+        <meta property="og:image:secure_url" content="/user/themes/teamspeak/images/ts-share-image2.jpg" />
+        <meta property="og:site_name" content="TeamSpeak" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="TeamSpeak" />
+        <meta name="twitter:description" content="TeamSpeak – Crystal-clear voice communication for gaming, teams, and communities. Secure, private, and fully customizable." />
+        <meta name="twitter:image" content="/user/themes/teamspeak/images/ts-share-image2.jpg" />
+
+<meta name="generator" content="GravCMS" />
+<meta name="description" content="TeamSpeak — the trusted voice communication platform for gaming, business, and communities. Crystal-clear audio, military-grade security, and cross-platform support." />
+<link rel="canonical" href="/en" />
+<link rel="alternate" hreflang="en" href="/en/" />
+<link rel="alternate" hreflang="de" href="/de/" />
+<link rel="alternate" hreflang="x-default" href="/en/" />
+<link rel="icon" href="/user/themes/teamspeak/images/favicon.ico" sizes="32x32" />
+<link rel="apple-touch-icon" href="/user/themes/teamspeak/images/favicon.png" sizes="180x180" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "TeamSpeak",
+  "url": "https://www.teamspeak.com",
+  "logo": "/user/themes/teamspeak/images/logo_front.svg",
+  "sameAs": [
+    "https://www.facebook.com/TeamSpeak",
+    "https://twitter.com/teamspeak",
+    "https://www.instagram.com/teamspeak",
+    "https://www.youtube.com/teamspeak"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "TeamSpeak",
+  "operatingSystem": "Windows, macOS, Linux, Android, iOS",
+  "applicationCategory": "CommunicationApplication",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<link rel="preload" href="/user/themes/teamspeak/fonts/teamspeak-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/user/themes/teamspeak/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/user/themes/teamspeak/images/client/hero-client.webp" as="image" type="image/webp">
+<link rel="preconnect" href="https://consent.cookiebot.com" crossorigin>
+<link rel="dns-prefetch" href="https://consent.cookiebot.com">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+<link rel="preconnect" href="https://www.myteamspeak.com" crossorigin>
+<link rel="dns-prefetch" href="https://www.myteamspeak.com">
+<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+<link rel="preconnect" href="https://www.clarity.ms" crossorigin>
+<link rel="preconnect" href="https://connect.facebook.net" crossorigin>
+<link rel="preconnect" href="https://static.zdassets.com" crossorigin>
+<style>
+:root{--primary-blue:#1c82cc;--primary-blue-dark:#2779bd;--accent-green:#25eb93;--dark-bg:#161c28;--darker-bg:#0f1318;--darkest-bg:#090c10;--text-primary:#fff;--text-secondary:rgba(255,255,255,.85);--text-muted:rgba(255,255,255,.65);--z-navbar:1030;--z-nav-items:1050;--z-nav-logo:1060;--font-family-heading:'TeamSpeak 2020',sans-serif;--font-family-body:'Inter',sans-serif}
+*{box-sizing:border-box}body{margin:0;padding-top:6.0625rem;font-family:"Inter",sans-serif;background:linear-gradient(135deg,var(--darker-bg) 0%,var(--dark-bg) 50%,var(--darker-bg) 100%);color:var(--text-primary);min-height:100vh}
+h1,h2,h3,h4,h5,h6{font-family:"TeamSpeak 2020",sans-serif;color:#efefef;text-transform:uppercase}
+.navbar-overlay{position:fixed;top:0;left:0;right:0;z-index:var(--z-navbar);padding:15px 30px;background:linear-gradient(135deg,rgba(22,28,40,.95) 0%,rgba(18,23,31,.95) 100%);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav-container{display:flex;align-items:center;width:100%;max-width:71.25rem;margin:0 auto;padding-left:.75rem;padding-right:.75rem;position:relative}
+.nav-logo{display:flex;align-items:center;text-decoration:none;z-index:2}
+.nav-logo img{height:58px;width:auto}
+.nav-container>.nav-center{display:flex;gap:30px;list-style:none;margin:0 0 0 30px;padding:0;position:relative;justify-content:flex-start;align-items:center;flex:0 1 auto}
+.nav-center .nav-link{color:#efefef;text-decoration:none;font-weight:500;font-size:.9rem;padding:8px 4px;white-space:nowrap}
+.nav-right{display:flex;align-items:center;gap:12px;margin-left:auto}
+.dropdown-menu{display:none}.nav-social-mobile{display:none!important}.nav-link>i,.dropdown-item>i{display:inline-block;width:1.25em;text-align:center}.social-icons a{display:inline-flex;align-items:center;justify-content:center;width:1.5em;height:1.5em}
+.container-fluid{width:100%;padding-right:.75rem;padding-left:.75rem;margin-right:auto;margin-left:auto}
+.container{width:100%;max-width:71.25rem;padding-right:.75rem;padding-left:.75rem;margin-right:auto;margin-left:auto}
+.hero-container{padding-top:60px}
+.hero-overlay{position:relative;z-index:5;padding:0 0 60px 0;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:20px;width:100%}
+.hero-overlay .hero-content{flex:1;max-width:50%;text-align:left}
+.hero-overlay .hero-visual{flex:1;max-width:50%;display:flex;justify-content:center;align-items:center}
+.row{display:flex;flex-wrap:wrap;margin-right:-.75rem;margin-left:-.75rem}
+.col-12{position:relative;width:100%;padding-right:.75rem;padding-left:.75rem;flex:0 0 100%;max-width:100%}
+.d-none{display:none!important}
+.collapse:not(.show){display:none}
+.py-3{padding-top:1rem;padding-bottom:1rem}.mb-2{margin-bottom:.5rem!important}.mb-3{margin-bottom:1rem!important}.mb-4{margin-bottom:1.5rem!important}.mb-5{margin-bottom:3rem!important}.text-center{text-align:center!important}.mx-0{margin-left:0!important;margin-right:0!important}.px-0{padding-left:0!important;padding-right:0!important}.p-0{padding:0!important}.m-0{margin:0!important}.align-items-center{align-items:center!important}
+@media(min-width:576px){.d-sm-inline{display:inline!important}}
+@media(min-width:992px){.col-lg-6{flex:0 0 50%;max-width:50%}}
+footer{position:relative}
+.business-page-container,.communities-page-container,.find-host-page-container,.get-started-page-container,.licensing-page-container,.mediakit-page-container,.download-page-container{max-width:71.25rem;margin:0 auto;padding:0 clamp(1rem,3vw,2rem) 2rem}
+.hero-section{text-align:center;padding:clamp(.75rem,2vw,1.25rem) 0 1.5rem}
+.hero-heading-gradient{font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.15;margin:0 0 1rem}
+.hero-description{font-size:clamp(.95rem,1.5vw,1.15rem);max-width:min(900px,90%);margin:0 auto;line-height:1.7;color:rgba(255,255,255,.8)}
+.navbar-overlay[data-nav-settling],.navbar-overlay[data-nav-settling] *{transition:none!important}
+@media(min-width:921px){.navbar-overlay:not([data-nav-mode]) .nav-center.collapse:not(.show){display:flex!important}.navbar-overlay:not([data-nav-mode]) .nav-toggle,.navbar-overlay:not([data-nav-mode]) .nav-mobile-controls,.navbar-overlay:not([data-nav-mode]) .lang-selector-mobile{display:none}}
+@media(max-width:920px){.navbar-overlay:not([data-nav-mode]) .lang-selector-desktop{display:none}.navbar-overlay:not([data-nav-mode]) .nav-mobile-controls{display:flex;position:fixed;right:20px;top:10px;z-index:1040}.navbar-overlay:not([data-nav-mode]) .nav-toggle{display:flex;align-items:center;justify-content:center;width:2.75rem;height:2.75rem;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:8px;cursor:pointer;padding:0}.toggle-icon{display:block;width:24px;height:2px;background:#efefef;position:relative}.toggle-icon::before,.toggle-icon::after{content:'';position:absolute;width:24px;height:2px;background:#efefef;left:0}.toggle-icon::before{top:-7px}.toggle-icon::after{bottom:-7px}.navbar-overlay:not([data-nav-mode]) .nav-logo img{height:44px}}
+@media(max-width:920px){.hero-overlay{flex-direction:column;text-align:center;padding:10px 0 20px 0}.hero-overlay .hero-content,.hero-overlay .hero-visual{max-width:100%;text-align:center}}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" media="print" onload="this.media='all'" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" data-cookieconsent="necessary" />
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"></noscript>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" media="print" onload="this.media='all'" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" data-cookieconsent="necessary" />
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous"></noscript>
+    
+
+
+
+
+
+
+    
+        <link href="/assets/f580da91ee110e408d12e43cf5451c28.css?g-0ea782df" type="text/css" rel="stylesheet">
+
+                        
+            <script src="/assets/f1ceb2b36f636f0e15422237b13a8c89.js?g-0ea782df" defer></script>
+
+
+</head>
+<body  class="content-dark parent-index page-index">
+
+<div class="plain-hex-bg" aria-hidden="true">
+  <div id="plain-hex-background"></div>
+</div>
+
+
+<nav class="navbar-overlay fixed-top">
+    <div class="nav-container">
+                <a class="nav-logo" href="/en/">
+            <img alt="TeamSpeak" src="/user/themes/teamspeak/images/logo_front.svg" width="194" height="58">
+        </a>
+
+                <ul class="nav-center collapse navbar-collapse" id="navbarResponsive">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownFeatures" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownFeatures">
+                    <a class="dropdown-item" href="/en/solutions/communities/"><i class="fas fa-users"></i> Communities</a>
+                    <a class="dropdown-item" href="/en/features/licensing/"><i class="fas fa-key"></i> Licensing</a>
+                    <hr class="dropdown-divider">
+                    <a class="dropdown-item" href="/en/solutions/business-sdk/"><i class="fas fa-briefcase"></i> Business & SDK</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/en/downloads"><i class="fas fa-download"></i> Downloads</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMTS" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">myTeamSpeak</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMTS">
+                    <a class="dropdown-item" href="https://www.myteamspeak.com/register" target="_blank" rel="noopener"><i class="fas fa-user-plus"></i> Register</a>
+                    <a class="dropdown-item" href="https://www.myteamspeak.com/login" target="_blank" rel="noopener"><i class="fas fa-sign-in-alt"></i> Login</a>
+                    <a class="dropdown-item" href="https://www.myteamspeak.com/" target="_blank" rel="noopener"><i class="fas fa-puzzle-piece"></i> Add-ons</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSupport" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Support</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownSupport">
+                    <a class="dropdown-item" href="/en/support/get-started/"><i class="fas fa-rocket"></i> Getting Started</a>
+                    <a class="dropdown-item" href="/en/community-guidelines/"><i class="fas fa-users"></i> Community Guidelines</a>
+                    <a class="dropdown-item" href="https://support.teamspeak.com/hc/en-us" target="_blank" rel="noopener"><i class="fas fa-question-circle"></i> FAQ</a>
+                    <a class="dropdown-item" href="https://community.teamspeak.com/" target="_blank" rel="noopener"><i class="fas fa-comments"></i> Forum</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMore" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMore">
+                    <a class="dropdown-item" href="/en/more/find-a-host/"><i class="fas fa-server"></i> Find a Host</a>
+                    <a class="dropdown-item" href="/en/mediakit/"><i class="fas fa-images"></i> Media Kit</a>
+                    <a class="dropdown-item" href="/en/privacy-policy/"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+                    <a class="dropdown-item" href="/en/terms-and-conditions/"><i class="fas fa-file-contract"></i> Terms and Conditions</a>
+                    <a class="dropdown-item" href="/en/more/about-us/"><i class="fas fa-building"></i> About Us</a>
+                    <hr class="dropdown-divider">
+                    <a class="dropdown-item" href="https://sales.teamspeakusa.com/" target="_blank" rel="noopener"><i class="fas fa-shopping-cart"></i> Customer Center</a>
+                </div>
+            </li>
+                        <li class="nav-item dropdown lang-selector lang-selector-desktop">
+                
+
+<a class="nav-link dropdown-toggle lang-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="lang-flag">
+                    <img src="/user/themes/teamspeak/images/flags/us.svg" width="20" height="15" alt="English">
+            </span>
+</a>
+<div class="dropdown-menu dropdown-menu-end">
+                                                                            
+                    <a class="dropdown-item active" href="/en/">
+                <span class="lang-flag">
+                                            <img src="/user/themes/teamspeak/images/flags/us.svg" width="20" height="15" alt="English">
+                                    </span>
+                English
+            </a>
+                                                                                                            
+                    <a class="dropdown-item" href="/de/">
+                <span class="lang-flag">
+                                            <img src="/user/themes/teamspeak/images/flags/de.svg" width="20" height="15" alt="Deutsch">
+                                    </span>
+                Deutsch
+            </a>
+            </div>
+            </li>
+                        <li class="nav-item nav-mobile-social">
+                <div class="mobile-social-icons">
+                    <a href="https://twitter.com/teamspeak" target="_blank" rel="noopener" title="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/teamspeak" target="_blank" rel="noopener" title="Follow us on Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/teamspeak/" target="_blank" rel="noopener" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/teamspeak" target="_blank" rel="noopener" title="Subscribe on YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.twitch.tv/teamspeak_tv" target="_blank" rel="noopener" title="Watch on Twitch"><i class="fab fa-twitch"></i></a>
+                </div>
+            </li>
+        </ul>
+
+                <div class="nav-right">
+            <div class="social-icons">
+                <a href="https://twitter.com/teamspeak" target="_blank" rel="noopener" title="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/teamspeak" target="_blank" rel="noopener" title="Follow us on Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/teamspeak/" target="_blank" rel="noopener" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/teamspeak" target="_blank" rel="noopener" title="Subscribe on YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.twitch.tv/teamspeak_tv" target="_blank" rel="noopener" title="Watch on Twitch"><i class="fab fa-twitch"></i></a>
+            </div>
+        </div>
+
+                <div class="nav-mobile-controls">
+                        <div class="lang-selector-mobile dropdown">
+                
+
+<a class="nav-link dropdown-toggle lang-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="lang-flag">
+                    <img src="/user/themes/teamspeak/images/flags/us.svg" width="20" height="15" alt="English">
+            </span>
+</a>
+<div class="dropdown-menu dropdown-menu-end">
+                                                                            
+                    <a class="dropdown-item active" href="/en/">
+                <span class="lang-flag">
+                                            <img src="/user/themes/teamspeak/images/flags/us.svg" width="20" height="15" alt="English">
+                                    </span>
+                English
+            </a>
+                                                                                                            
+                    <a class="dropdown-item" href="/de/">
+                <span class="lang-flag">
+                                            <img src="/user/themes/teamspeak/images/flags/de.svg" width="20" height="15" alt="Deutsch">
+                                    </span>
+                Deutsch
+            </a>
+            </div>
+            </div>
+
+                        <button class="nav-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggle-icon"></span>
+            </button>
+        </div>
+    </div>
+</nav>
+<script>
+(function(){var n=document.querySelector('.navbar-overlay');if(!n)return;n.setAttribute('data-nav-settling','');var w=window.innerWidth;if(w<=840){n.setAttribute('data-nav-mode','mobile');n.setAttribute('data-nav-social','hidden');n.setAttribute('data-nav-compact','')}else if(w<=1200){n.setAttribute('data-nav-mode','desktop');n.setAttribute('data-nav-social','hidden');n.setAttribute('data-nav-compact','')}else{n.setAttribute('data-nav-mode','desktop');n.setAttribute('data-nav-social','visible')}})();
+</script>
+
+
+
+		<div class="container-fluid hero-container">
+		<div class="container">
+			<section class="hero-overlay">
+				<div class="hero-content">
+					<h1>TEAMSPEAK.<br>YOUR TEAM. YOUR RULES.</h1>
+					<p class="hero-description d-none d-sm-inline">Experience crystal-clear voice communication across platforms with military-grade security, lag-free performance, and unmatched reliability.</p>
+					<div class="hero-buttons">
+						<a href="/en/downloads" class="btn-hero-primary pulse">
+							<i class="fas fa-download"></i> Download Now
+						</a>
+						<a href="/en/support/get-started/" class="btn-hero-outline">
+							<i class="fas fa-info-circle"></i> Getting Started
+						</a>
+					</div>
+				</div>
+				<div class="hero-visual">
+					<div class="macos-window-wrapper">
+						<div class="macos-window">
+							<div class="macos-content">
+								<picture>
+									<source srcset="/user/themes/teamspeak/images/client/hero-client.webp" type="image/webp">
+									<img src="/user/themes/teamspeak/images/client/hero-client.jpg" alt="TeamSpeak Client" class="hero-client-image" width="1440" height="1080" style="max-width:100%;height:auto" loading="eager" fetchpriority="high">
+								</picture>
+							</div>
+						</div>
+												<div class="feature-highlight feature-highlight-1">
+							<div class="highlight-icon">
+								<i class="fas fa-shield-alt"></i>
+							</div>
+							<div class="highlight-text">
+								<span class="highlight-label">Security</span>
+								<span class="highlight-value">Military-Grade</span>
+							</div>
+						</div>
+						<div class="feature-highlight feature-highlight-2">
+							<div class="highlight-icon">
+								<i class="fas fa-bolt"></i>
+							</div>
+							<div class="highlight-text">
+								<span class="highlight-label">Latency</span>
+								<span class="highlight-value">Ultra-Low</span>
+							</div>
+						</div>
+						<div class="feature-highlight feature-highlight-3">
+							<div class="highlight-icon">
+								<i class="fas fa-desktop"></i>
+							</div>
+							<div class="highlight-text">
+								<span class="highlight-label">Screen Share</span>
+								<span class="highlight-value">4K @ 60fps</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+		<div class="container-fluid py-3">
+		<div class="container">
+			<div class="features-display row">
+				<div class="wrapper">
+					<div class="row">
+						<div class="outer-div col-12 mb-2">
+							<div class="news-banner">
+								<div class="news-banner-icon">
+									<i class="fas fa-desktop"></i>
+								</div>
+								<div class="news-banner-content">
+									<div class="news-banner-tags">
+										<span class="news-banner-tag tag-beta">Beta</span>
+										<span class="news-banner-tag tag-feature">Screen Sharing</span>
+										<span class="news-banner-tag tag-spec">4K</span>
+										<span class="news-banner-tag tag-spec">60fps</span>
+									</div>
+									<div class="news-banner-text">Experience ultra-low latency screen sharing, now live in TeamSpeak 6.</div>
+								</div>
+								<a href="/en/downloads" class="news-banner-cta">
+									Try it now <i class="fas fa-arrow-right"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<div class="container-fluid py-3">
+		<div class="container">
+						<div class="row">
+				<h2 class="mb-3 text-center col-12">Discover TeamSpeak for:</h2>
+			</div>
+						<div class="features-display row">
+				<div class="wrapper">
+					<div class="row">
+
+			<div class="outer-div col-12 col-lg-6 mb-2">
+    <a href="/en/solutions/communities/" class="image-card">
+                <span class="card-icon">
+            <i class="fas fa-users"></i>
+        </span>
+                <div class="card-content">
+            <h3>Communities</h3>
+            <p>Want your own server but don't have hardware for hosting? We've got you covered with our official solution.</p>
+        </div>
+        <span class="card-link">Explore <i class="fas fa-arrow-right"></i></span>
+    </a>
+</div>
+
+			<div class="outer-div col-12 col-lg-6 mb-2">
+    <a href="/en/features/licensing/" class="image-card">
+                <span class="card-icon">
+            <i class="fas fa-server"></i>
+        </span>
+                <div class="card-content">
+            <h3>Server Owners</h3>
+            <p>Have your own hardware or server? Set up and manage your own TeamSpeak environment for total control, privacy, and performance.</p>
+        </div>
+        <span class="card-link">Learn More <i class="fas fa-arrow-right"></i></span>
+    </a>
+</div>
+
+			<div class="outer-div col-12 col-lg-6 mb-2">
+    <a href="/en/support/get-started/" class="image-card">
+                <span class="card-icon">
+            <i class="fas fa-user"></i>
+        </span>
+                <div class="card-content">
+            <h3>New Users</h3>
+            <p>New to TeamSpeak? Learn how to set up, join servers, and connect with others quickly.</p>
+        </div>
+        <span class="card-link">Getting Started <i class="fas fa-arrow-right"></i></span>
+    </a>
+</div>
+
+			<div class="outer-div col-12 col-lg-6 mb-2">
+    <a href="/en/solutions/business-sdk/" class="image-card">
+                <span class="card-icon">
+            <i class="fas fa-briefcase"></i>
+        </span>
+                <div class="card-content">
+            <h3>Business / SDK</h3>
+            <p>Integrate TeamSpeak SDK into your product or deploy a secure private network for your organization.</p>
+        </div>
+        <span class="card-link">Explore SDK <i class="fas fa-arrow-right"></i></span>
+    </a>
+</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<div class="container-fluid client-carousel-section">
+    <div class="container">
+                <div class="row">
+            <div class="col-12">
+                <div class="client-carousel-header">
+                    <h2 class="client-carousel-title">Uncover the TeamSpeak 6 Client</h2>
+                    <p class="client-carousel-subtitle">Experience powerful features designed for seamless communication</p>
+                </div>
+            </div>
+        </div>
+
+                <div class="row">
+            <div class="col-12">
+                <div class="client-carousel-container">
+                                        <div class="client-carousel-tabs" role="tablist">
+                        <button type="button" class="client-carousel-tab active" data-tab="0" role="tab" aria-selected="true" tabindex="0">
+                            <i class="fas fa-users client-carousel-tab-icon"></i>
+                            <span class="client-carousel-tab-title">Community Discovery</span>
+                        </button>
+                        <button type="button" class="client-carousel-tab" data-tab="1" role="tab" aria-selected="false" tabindex="-1">
+                            <i class="fas fa-comments client-carousel-tab-icon"></i>
+                            <span class="client-carousel-tab-title">Messaging & Chat</span>
+                        </button>
+                        <button type="button" class="client-carousel-tab" data-tab="2" role="tab" aria-selected="false" tabindex="-1">
+                            <i class="fas fa-microphone client-carousel-tab-icon"></i>
+                            <span class="client-carousel-tab-title">Voice Quality</span>
+                        </button>
+                        <button type="button" class="client-carousel-tab" data-tab="3" role="tab" aria-selected="false" tabindex="-1">
+                            <i class="fas fa-server client-carousel-tab-icon"></i>
+                            <span class="client-carousel-tab-title">Server Control</span>
+                        </button>
+                    </div>
+
+                                        <div class="client-carousel-track">
+                        <div class="client-carousel-slides" id="clientCarouselSlides">
+                                                        <div class="client-carousel-slide" data-slide="0">
+                                <div class="client-carousel-image-container">
+                                    <picture>
+                                        <source srcset="/user/themes/teamspeak/images/client/carousel-community.webp" type="image/webp">
+                                        <img src="/user/themes/teamspeak/images/client/carousel-community.jpg"
+                                             alt="TeamSpeak Community Discovery Interface"
+                                             class="client-carousel-image"
+                                             width="1440" height="1080" style="max-width:100%;height:auto" loading="lazy">
+                                    </picture>
+                                </div>
+                                <div class="client-carousel-overlay">
+                                    <span class="client-carousel-badge"><i class="fas fa-users"></i> Community Discovery</span>
+                                    <h3 class="client-carousel-slide-title">Find Your Community</h3>
+                                    <p class="client-carousel-description">
+                                        Discover and join vibrant communities from around the world. Browse popular servers, explore gaming communities, and connect with like-minded people instantly.
+                                    </p>
+                                    <ul class="client-carousel-list">
+                                        <li>Browse public communities</li>
+                                        <li>Search by game, region, or interest</li>
+                                        <li>Join servers with one click</li>
+                                        <li>Create your own community server</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                                                        <div class="client-carousel-slide" data-slide="1">
+                                <div class="client-carousel-image-container">
+                                    <picture>
+                                        <source srcset="/user/themes/teamspeak/images/client/messaging-chat.webp" type="image/webp">
+                                        <img src="/user/themes/teamspeak/images/client/messaging-chat.jpg"
+                                             alt="TeamSpeak Group Chat Interface"
+                                             class="client-carousel-image"
+                                             width="1440" height="1080" style="max-width:100%;height:auto" loading="lazy">
+                                    </picture>
+                                </div>
+                                <div class="client-carousel-overlay">
+                                    <span class="client-carousel-badge"><i class="fas fa-comments"></i> Messaging & Chat</span>
+                                    <h3 class="client-carousel-slide-title">Stay Connected</h3>
+                                    <p class="client-carousel-description">
+                                        Communicate beyond voice with powerful messaging features. Create group chats, share media, and keep conversations organized across all your devices.
+                                    </p>
+                                    <ul class="client-carousel-list">
+                                        <li>Direct messaging with contacts</li>
+                                        <li>Create and manage group chats</li>
+                                        <li>Share files, images, and links</li>
+                                        <li>Synchronized across all devices</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                                                        <div class="client-carousel-slide" data-slide="2">
+                                <div class="client-carousel-image-container">
+                                    <picture>
+                                        <source srcset="/user/themes/teamspeak/images/client/voice-quality.webp" type="image/webp">
+                                        <img src="/user/themes/teamspeak/images/client/voice-quality.jpg"
+                                             alt="TeamSpeak Voice Interface"
+                                             class="client-carousel-image"
+                                             width="1440" height="1080" style="max-width:100%;height:auto" loading="lazy">
+                                    </picture>
+                                </div>
+                                <div class="client-carousel-overlay">
+                                    <span class="client-carousel-badge"><i class="fas fa-microphone"></i> Voice Quality</span>
+                                    <h3 class="client-carousel-slide-title">Crystal Clear Audio</h3>
+                                    <p class="client-carousel-description">
+                                        Experience superior voice quality with our advanced codec technology. Whether you're gaming, collaborating, or hosting events, TeamSpeak delivers exceptional clarity.
+                                    </p>
+                                    <ul class="client-carousel-list">
+                                        <li>Military-grade voice encryption</li>
+                                        <li>Low latency for real-time communication</li>
+                                        <li>Adjustable audio codec selection</li>
+                                        <li>Advanced noise suppression</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                                                        <div class="client-carousel-slide" data-slide="3">
+                                <div class="client-carousel-image-container">
+                                    <picture>
+                                        <source srcset="/user/themes/teamspeak/images/client/server-management.webp" type="image/webp">
+                                        <img src="/user/themes/teamspeak/images/client/server-management.jpg"
+                                             alt="TeamSpeak Server Management"
+                                             class="client-carousel-image"
+                                             width="1440" height="1080" style="max-width:100%;height:auto" loading="lazy">
+                                    </picture>
+                                </div>
+                                <div class="client-carousel-overlay">
+                                    <span class="client-carousel-badge"><i class="fas fa-server"></i> Server Control</span>
+                                    <h3 class="client-carousel-slide-title">Your Server, Your Rules</h3>
+                                    <p class="client-carousel-description">
+                                        Take complete control with powerful server management tools. Create channels, assign permissions, and customize your community exactly how you want it.
+                                    </p>
+                                    <ul class="client-carousel-list">
+                                        <li>Unlimited channels and sub-channels</li>
+                                        <li>Granular permission system</li>
+                                        <li>Server groups and templates</li>
+                                        <li>Ban and kick management</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+		
+<div class="container-fluid pt-2">
+    <div class="container">
+        <div class="row">
+            <h1 class="mt-3 mb-2 text-center col-12">Features that speak for themselves.</h1>
+        </div>
+        <div class="features-grid" id="features">
+                            <div class="outer-div">
+    <div class="featureBox">
+        <div class="feature-icon">
+            <i class="fas fa-server"></i>
+        </div>
+        <div class="feature-content">
+            <h3>Self-Hosted Servers</h3>
+            <p>Maintain complete control over your server. Customize settings, manage permissions, and ensure privacy while hosting your own TeamSpeak environment.</p>
+        </div>
+    </div>
+</div>
+                            <div class="outer-div">
+    <div class="featureBox">
+        <div class="feature-icon">
+            <i class="fas fa-desktop"></i>
+        </div>
+        <div class="feature-content">
+            <h3>Screenshare & Collaboration Tools</h3>
+            <p>Share your screen in real time for gaming, work, or streaming. Collaborate efficiently without leaving the TeamSpeak environment.</p>
+        </div>
+    </div>
+</div>
+                            <div class="outer-div">
+    <div class="featureBox">
+        <div class="feature-icon">
+            <i class="fas fa-users"></i>
+        </div>
+        <div class="feature-content">
+            <h3>Communities</h3>
+            <p>Can't self-host? Create your own server instantly via our TS Official Communities platform. Let us handle the hosting while you focus on your games.</p>
+        </div>
+    </div>
+</div>
+                            <div class="outer-div">
+    <div class="featureBox">
+        <div class="feature-icon">
+            <i class="fas fa-microphone"></i>
+        </div>
+        <div class="feature-content">
+            <h3>Unrivaled Voice Quality</h3>
+            <p>Experience crystal-clear, lag-free communication with automatic microphone volume adjustment, advanced background noise reduction, and echo cancellation.</p>
+        </div>
+    </div>
+</div>
+            
+                        <div class="features-expanded collapse" id="moreFeaturesfeatures">
+                                    <div class="outer-div">
+    <div class="featureBox">
+        <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+        </div>
+        <div class="feature-content">
+            <h3>Secure and Privacy-Conscious</h3>
+            <p>Your data is protected with industry-leading encryption and strict privacy controls. You remain in control of what's shared.</p>
+        </div>
+    </div>
+</div>
+                                    <div class="outer-div">
+    <div class="featureBox">
+        <div class="feature-icon">
+            <i class="fas fa-lock"></i>
+        </div>
+        <div class="feature-content">
+            <h3>Next-Gen Security</h3>
+            <p>Military-grade AES-based encryption is standard. Control security at the server or channel level, and communicate privately with end-to-end encrypted global chat.</p>
+        </div>
+    </div>
+</div>
+                                    <div class="outer-div">
+    <div class="featureBox">
+        <div class="feature-icon">
+            <i class="fas fa-sliders-h"></i>
+        </div>
+        <div class="feature-content">
+            <h3>Advanced Permissions System</h3>
+            <p>Take full control with a hierarchical permission system. Decide who can talk, join channels, manage files, or share screens; everything is in your hands.</p>
+        </div>
+    </div>
+</div>
+                                    <div class="outer-div">
+    <div class="featureBox">
+        <div class="feature-icon">
+            <i class="fas fa-palette"></i>
+        </div>
+        <div class="feature-content">
+            <h3>Customize Your Client</h3>
+            <p>Make TeamSpeak your own and customize the client to meet your personal style with custom themes & fonts. Choose from community-created themes or design your own, and pick any font installed on your system for a truly personalized look.</p>
+        </div>
+    </div>
+</div>
+                                    <div class="outer-div">
+    <div class="featureBox">
+        <div class="feature-icon">
+            <i class="fas fa-mobile-alt"></i>
+        </div>
+        <div class="feature-content">
+            <h3>Mobile & Remote Connectivity</h3>
+            <p>Stay connected on the move. Our mobile apps for Android and iOS allow you to manage voice channels, chat, and commands wherever you are.</p>
+        </div>
+    </div>
+</div>
+                                    <div class="outer-div">
+    <div class="featureBox">
+        <div class="feature-icon">
+            <i class="fas fa-expand-arrows-alt"></i>
+        </div>
+        <div class="feature-content">
+            <h3>High Scalability</h3>
+            <p>From small teams to large conferences with thousands of participants, TS6 scales effortlessly with our robust Client-Server architecture.</p>
+        </div>
+    </div>
+</div>
+                                    <div class="outer-div">
+    <div class="featureBox">
+        <div class="feature-icon">
+            <i class="fas fa-share-alt"></i>
+        </div>
+        <div class="feature-content">
+            <h3>Powerful File Sharing & Collaboration</h3>
+            <p>Share files seamlessly, with built-in support for firewall-friendly transfers, global text chat, and collaborative screen sharing.</p>
+        </div>
+    </div>
+</div>
+                                    <div class="outer-div">
+    <div class="featureBox">
+        <div class="feature-icon">
+            <i class="fas fa-comment-dots"></i>
+        </div>
+        <div class="feature-content">
+            <h3>Global Text & Direct Chat</h3>
+            <p>Stay in touch with individuals or entire teams via global chat, direct messaging, or private channels; perfect for both casual and professional use.</p>
+        </div>
+    </div>
+</div>
+                            </div>
+                    </div>
+
+                <div class="row">
+            <div class="col-12 text-center mt-4">
+                <a id="viewFeaturesBtnfeatures" class="btn btn-primary" href="#moreFeaturesfeatures" role="button" aria-expanded="false" aria-controls="moreFeaturesfeatures">
+                    <span class="btn-text">View MORE Features</span> <i class="fas fa-angle-down"></i>
+                </a>
+            </div>
+        </div>
+            </div>
+</div>
+
+	<div style="margin-top: 10px;">
+		<div class="container-fluid py-3 bg-ts" id="trusted" style="margin-bottom: 25px;">
+    <div class="container">
+        <div class="row text-center d-flex align-items-center partner_logos">
+            <div class="col-12"><h1 class="text-center col-12 mb-1">TeamSpeak. Tried. Tested. Trusted.</h1></div>
+            <div class="col-12 mb-3">An out-of-this-world VoIP solution. TeamSpeak supplies mission-critical voice communication solutions to some of the world's finest.</div>
+                    </div>
+    </div>
+</div>
+	</div>
+
+
+<footer>
+  <div class="container py-5 mx-auto">
+    <div class="row">
+      <div class="col-6 col-sm-3">
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="/en/solutions/communities/">Communities</a></li>
+          <li><a href="/en/features/licensing/">Licensing</a></li>
+          <li><a href="/en/solutions/business-sdk/">Business & SDK</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-sm-3">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="/en/support/get-started/">Getting Started</a></li>
+          <li><a href="/en/community-guidelines/">Community Guidelines</a></li>
+          <li><a href="https://support.teamspeak.com/hc/en-us" target="_blank" rel="noopener">FAQ</a></li>
+          <li><a href="https://community.teamspeak.com/" target="_blank" rel="noopener">Forum</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-sm-3">
+        <h4>myTeamSpeak</h4>
+        <ul>
+          <li><a href="https://www.myteamspeak.com/register" target="_blank" rel="noopener">Register</a></li>
+          <li><a href="https://www.myteamspeak.com/login" target="_blank" rel="noopener">Login</a></li>
+          <li><a href="https://www.myteamspeak.com/" target="_blank" rel="noopener">Add-ons</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-sm-3">
+        <h4>More</h4>
+        <ul>
+          <li><a href="/en/more/find-a-host/">Find a Host</a></li>
+          <li><a href="/en/mediakit/">Media Kit</a></li>
+          <li><a href="/en/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/en/terms-and-conditions/">Terms and Conditions</a></li>
+          <li><a href="/en/more/about-us/">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+	  <div class="row">
+		  <div class="col-12 col-md-3 order-last order-md-first">
+		  	<h4>Start Here</h4>
+			<div class="row">
+				
+<div class="col-12 col-md-12 mb-2" id="fallbackbt">
+	<button onclick="window.location.href='/en/downloads'" class="btn btn-lg btn-primary w-100 text-truncate">
+	<i class="fas fa-download"></i> Download Now</button>
+</div>
+<div class="col-12 col-md-12 mb-2" id="iosDL">
+	<button class="btn btn-lg btn-primary w-100 text-truncate" onclick="window.location.href='/en/downloads'" type="button"><i class="fas fa-download"></i> Download Now</button>
+</div>
+<div class="col-12 col-md-12 mb-2" id="andDL">
+	<button class="btn btn-lg btn-primary w-100 text-truncate" onclick="window.location.href='/en/downloads'" type="button"><i class="fas fa-download"></i> Download Now</button>
+</div>
+<div class="col-12 col-md-12 mb-2" id="mtsBTN">
+	<button class="btn btn-lg btn-primary w-100 text-truncate" onclick="window.open('https://www.myteamspeak.com/', '_blank', 'noopener')"><i class="fas fa-user-circle"></i> myTeamSpeak</button>
+</div>
+<div class="col-12 col-md-12 mb-2" id="fomBTN">
+	<a class="btn btn-lg btn-primary w-100 text-truncate scroll" href="#browserOutline">Read More <i class="fas fa-angle-right"></i></a>
+</div>
+			</div>
+			<div class="row">
+				<div class="col-12 mt-5 copyright">
+          <h3><span class="footer-copyright">&nbsp;&copy; 2026.  TeamSpeak Systems, Inc.<br>All Rights Reserved.</span></h3></div>
+			  </div>
+		  </div>
+      <div class="col-md-6"></div>
+		  <div class="col-12 col-md-3">
+        <h4>Get In Touch</h4>
+		  	<address class="vcard">
+				  <div class="org">TeamSpeak Systems, Inc.</div>
+           <div class="adr">
+            <span class="street-address">PO Box 211180</span>,<br>
+            <span class="locality">Chula Vista</span>,
+            <span class="region">CA</span>,
+            <span class="postal-code">91921</span>,<br>
+            <span class="country-name">USA</span>
+           </div>
+			    <div class="tel">Tel: +1-877-832-6773</div>
+			    <div class="tel">Fax: <span class="fax">+1-619-312-4145</span></div>
+          <div class="email">Email: <a class="email" href="mailto:support@teamspeak.com">support@teamspeak.com</a></div>
+        </address>
+        <div class="footer-social-icons">
+          <a href="https://twitter.com/teamspeak" target="_blank" rel="noopener" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/teamspeak" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/teamspeak/" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/teamspeak" target="_blank" rel="noopener" title="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.twitch.tv/teamspeak_tv" target="_blank" rel="noopener" title="Twitch"><i class="fab fa-twitch"></i></a>
+        </div>
+		  </div>
+	  </div>
+  </div>
+</footer>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" data-cookieconsent="necessary"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha512-hDWGyh+Iy4Mr9AHOzUP2+Y0iVPn/BwxxaoSleEjH/i1o4EVTF/sh0/A1Syii8PWOae+uPr+T/KHwynoebSuAhw==" crossorigin="anonymous" data-cookieconsent="necessary"></script>
+<script>
+window.tsTranslations = {
+  clipboard: {
+    copyLink: "Copy download link",
+    copied: "Copied!",
+    failedCopy: "Failed to copy to clipboard"
+  },
+  ui: {
+    showLess: "Show less",
+    showMore: "Show more",
+    viewAllFeatures: "View MORE Features",
+    viewLessFeatures: "View LESS Features"
+  },
+  map: {
+    visitWebsite: "Visit Website",
+    viewAllIn: "VIEW ALL IN",
+    geocodeError: "Location lookup failed",
+    hostingProvidersIn: "Hosting Providers in",
+    hosterSince: "Partner since",
+    close: "Close",
+    locationDenied: "Enable location in browser settings",
+    locationError: "Location unavailable"
+  },
+  zendeskDisabled: {
+    title: "Support Widget Unavailable",
+    message: "Enable preference cookies to use the support widget.",
+    enableBtn: "Enable Cookies",
+    helpText: "Help"
+  }
+};
+</script>
+<script src="/env.js" data-cookieconsent="ignore"></script>
+<script type="text/plain" data-cookieconsent="statistics">
+(function () { var s = document.createElement('script'); s.async = 1; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.TS_ANALYTICS.ga4; document.head.appendChild(s); })();
+gtag('js', new Date());
+gtag('config', window.TS_ANALYTICS.ga4, { send_page_view: true, cookie_flags: 'SameSite=Lax;Secure', cookie_expires: 31536000 });
+</script>
+<script type="text/plain" data-cookieconsent="statistics">
+(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script",window.TS_ANALYTICS.clarity);
+</script>
+<script type="text/plain" data-cookieconsent="marketing">
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '754357298296505');
+fbq('track', 'PageView');
+</script>
+<script type="text/plain" data-cookieconsent="preferences">
+window.zESettings={webWidget:{color:{theme:'#1c82cc',launcher:'#1c82cc',launcherText:'#ffffff',button:'#1c82cc',resultLists:'#1c82cc',header:'#1c82cc',articleLinks:'#1c82cc'}}};
+</script>
+<script type="text/plain" data-cookieconsent="preferences" id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=85713de3-0830-4662-ac89-9b5a5dbf1ab2"></script>
+<script defer src="/user/themes/teamspeak/js/ga4-events.js?v=3.0.0" data-cookieconsent="ignore"></script>
+
+
+
+<div id="redirectModal" class="redirect-modal-overlay" aria-hidden="true">
+    <div class="redirect-modal-card redirect-container">
+        <button class="redirect-modal-close" aria-label="Close">
+            <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+
+        <div class="redirect-logo">
+            <img src="/user/themes/teamspeak/images/logo_front.svg" alt="TeamSpeak" width="194" height="58">
+        </div>
+        <button class="redirect-uri-pill redirect-modal-pill redirect-uri-copy" style="display:none" title="Copy to clipboard">
+            <i class="fas fa-link redirect-uri-copy-icon" aria-hidden="true"></i>
+            <span class="redirect-modal-uri-text"></span>
+        </button>
+
+                <div class="redirect-modal-ready redirect-state active">
+            <h1>Opening TeamSpeak</h1>
+            <p class="redirect-subtitle">Connecting you to a TeamSpeak server...</p>
+            <div class="redirect-help">
+                Don't have TeamSpeak? 
+                <a href="/en/downloads">Download TeamSpeak</a>
+            </div>
+        </div>
+
+                <div class="redirect-modal-success redirect-state">
+            <h1>All Set!</h1>
+            <p class="redirect-subtitle">You should now be connected to the server</p>
+            <div class="redirect-buttons">
+                <button class="redirect-btn redirect-btn-secondary redirect-modal-dismiss">
+                    Close Popup
+                </button>
+            </div>
+            <div class="redirect-help">
+                Didn't work?
+                <a href="/en/downloads">Install the latest client</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="language-modal" class="language-modal">
+  <div class="language-modal-content">
+    <div class="language-modal-header">
+      <h3>Select Language</h3>
+      <button class="language-modal-close" aria-label="Close">&times;</button>
+    </div>
+    <div class="language-modal-list">
+                                                                                                  
+                  <a href="/en/" class="language-modal-item active">
+                          <img src="/user/themes/teamspeak/images/flags/us.svg" width="20" height="15" alt="">
+                        <span>English</span>
+          </a>
+                                                                                                                        
+                  <a href="/de/" class="language-modal-item">
+                          <img src="/user/themes/teamspeak/images/flags/de.svg" width="20" height="15" alt="">
+                        <span>Deutsch</span>
+          </a>
+                  </div>
+  </div>
+</div>
+
+</body>
+</html>
